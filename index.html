@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Shaan Chander's personal website featuring projects, education, skills, and experience in computer science and cybersecurity."
+    />
+    <title>Shaan Chander</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="site-nav" id="top">
+      <div class="nav-inner">
+        <div class="nav-links">
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+        </div>
+        <div class="nav-actions">
+          <div class="social-icons" aria-label="Social links">
+            <a
+              class="icon-link"
+              href="https://github.com/shaanchander"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8a8.01 8.01 0 0 0 5.47 7.59c.4.07.55-.17.55-.38v-1.34c-2.01.44-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52 0-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.58.82-2.13-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.48 7.48 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.55.82 1.26.82 2.13 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="icon-link"
+              href="https://linkedin.com/in/shaanchander"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                <path
+                  d="M0 1.15C0 .51.53 0 1.18 0h13.64C15.47 0 16 .51 16 1.15v13.7c0 .64-.53 1.15-1.18 1.15H1.18C.53 16 0 15.49 0 14.85V1.15Zm4.75 13.22V6.17H2.02v8.2h2.73ZM3.39 5.05c.95 0 1.54-.63 1.54-1.42-.02-.8-.6-1.42-1.53-1.42-.93 0-1.54.63-1.54 1.42 0 .79.59 1.42 1.51 1.42h.02Zm5.58 9.32v-4.58c0-.24.02-.47.09-.64.19-.47.62-.95 1.35-.95.95 0 1.34.72 1.34 1.78v4.39h2.73v-4.7c0-2.52-1.34-3.69-3.13-3.69-1.44 0-2.07.8-2.43 1.36h.02V6.17H6.21c.04.76 0 8.2 0 8.2h2.76Z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+
+          <span class="nav-action-divider" aria-hidden="true"></span>
+
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            type="button"
+            aria-label="Switch to dark mode"
+            aria-pressed="false"
+            data-mode="light"
+          >
+            <svg
+              class="theme-icon theme-moon"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="M20 14.2A8 8 0 0 1 9.8 4a8 8 0 1 0 10.2 10.2Z"
+              ></path>
+            </svg>
+            <svg
+              class="theme-icon theme-sun"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="M12 4V2M12 22v-2M4 12H2M22 12h-2M6.3 6.3 4.9 4.9M19.1 19.1l-1.4-1.4M17.7 6.3l1.4-1.4M4.9 19.1l1.4-1.4M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero section">
+      <div class="hero-content">
+        <h1>Shaan Chander</h1>
+        <p class="intro">Computer Science Student at Carleton University.</p>
+
+        <ul class="quick-facts">
+          <li>Ottawa, ON</li>
+          <li>September 2024 - December 2028</li>
+          <li>11.93 CGPA</li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <article class="card">
+            <h3>
+              <span class="project-title-note" tabindex="0"
+                >Media DRM Security Analysis
+                <span class="nolink-badge" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" focusable="false">
+                    <path d="M6.2 4.2 4.4 6a2.5 2.5 0 0 0 0 3.5 2.5 2.5 0 0 0 3.5 0l1.8-1.8"></path>
+                    <path d="M9.8 11.8 11.6 10a2.5 2.5 0 0 0 0-3.5 2.5 2.5 0 0 0-3.5 0L6.3 8.3"></path>
+                    <path d="M2 14 14 2"></path>
+                  </svg>
+                </span>
+                <span class="title-tooltip"
+                  >This project isn't public, but I'd love to talk about it
+                  privately.</span
+                ></span
+              >
+            </h3>
+            <p class="stack">Cryptography, Network Sniffing, Python</p>
+            <p class="project-copy">
+              Security research project on DRM-protected OTT applications that
+              used Frida, encrypted traffic analysis, and custom Python tooling
+              to examine key exchange behavior and validate weaknesses in
+              authentication and content-protection flows
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>
+              <a
+                class="project-title-link"
+                href="https://github.com/shaanchander/NHL-Insider-Tracker"
+                target="_blank"
+                rel="noopener noreferrer"
+                >NHL Insider Tracker
+                <span class="link-badge" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" focusable="false">
+                    <path
+                      d="M9.5 2h4v4h-1.5V4.56L6.53 10.03l-1.06-1.06L10.94 3.5H9.5V2ZM3 3.5A1.5 1.5 0 0 1 4.5 2h3v1.5h-3v9h9v-3H15v3A1.5 1.5 0 0 1 13.5 14h-9A1.5 1.5 0 0 1 3 12.5v-9Z"
+                    ></path>
+                  </svg>
+                </span></a
+              >
+            </h3>
+            <p class="stack">Python, REST APIs, Webhooks, YAML, Regex, Cron</p>
+            <p class="project-copy">
+              Real-time automation tool that monitors NHL insider updates,
+              parses raw posts with regex-based rules, and sends structured
+              alerts through Discord webhooks for up-to-the-minute trade,
+              injury, and league news
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>
+              <span class="project-title-note" tabindex="0"
+                >Home Server
+                <span class="nolink-badge" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" focusable="false">
+                    <path d="M6.2 4.2 4.4 6a2.5 2.5 0 0 0 0 3.5 2.5 2.5 0 0 0 3.5 0l1.8-1.8"></path>
+                    <path d="M9.8 11.8 11.6 10a2.5 2.5 0 0 0 0-3.5 2.5 2.5 0 0 0-3.5 0L6.3 8.3"></path>
+                    <path d="M2 14 14 2"></path>
+                  </svg>
+                </span>
+                <span class="title-tooltip"
+                  >This project isn't public, but I'd love to talk about it
+                  privately.</span
+                ></span
+              >
+            </h3>
+            <p class="stack">Docker, Virtualization, Cron, Bash</p>
+            <p class="project-copy">
+              Home lab server built around an 8-disk parity-protected
+              104TB array with 99.9% accessibility and zero data loss over 5+
+              years, hosting Docker services and Linux, Windows, and macOS
+              virtual machines for centralized compute and storage
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>
+              <span class="project-title-note" tabindex="0"
+                >Ottawa Rec Booking
+                <span class="nolink-badge" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" focusable="false">
+                    <path d="M6.2 4.2 4.4 6a2.5 2.5 0 0 0 0 3.5 2.5 2.5 0 0 0 3.5 0l1.8-1.8"></path>
+                    <path d="M9.8 11.8 11.6 10a2.5 2.5 0 0 0 0-3.5 2.5 2.5 0 0 0-3.5 0L6.3 8.3"></path>
+                    <path d="M2 14 14 2"></path>
+                  </svg>
+                </span>
+                <span class="title-tooltip"
+                  >This project isn't public, but I'd love to talk about it
+                  privately.</span
+                ></span
+              >
+            </h3>
+            <p class="stack">Python, Selenium, REST APIs</p>
+            <p class="project-copy">
+              Python automation tool that registers users for selected City of
+              Ottawa recreation activities in one end-to-end flow by navigating
+              the registration site with Selenium, submitting user-provided
+              parameters, retrieving the email 2FA code, and confirming
+              enrollment
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>
+              <a
+                class="project-title-link"
+                href="https://github.com/shaanchander/NHL-DB-Website"
+                target="_blank"
+                rel="noopener noreferrer"
+                >NHL DB Website
+                <span class="link-badge" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" focusable="false">
+                    <path
+                      d="M9.5 2h4v4h-1.5V4.56L6.53 10.03l-1.06-1.06L10.94 3.5H9.5V2ZM3 3.5A1.5 1.5 0 0 1 4.5 2h3v1.5h-3v9h9v-3H15v3A1.5 1.5 0 0 1 13.5 14h-9A1.5 1.5 0 0 1 3 12.5v-9Z"
+                    ></path>
+                  </svg>
+                </span></a
+              >
+            </h3>
+            <p class="stack">Flask, Python, HTML/CSS, REST APIs</p>
+            <p class="project-copy">
+              Flask-based web app that allows users to access data provided by the NHL API,
+              such as player career statistics, current NHL rosters,
+              team schedules, and standings in a simple, intuitive,
+              and user-friendly way
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>
+              <span class="project-title-note" tabindex="0"
+                >Graduation Graphics System
+                <span class="nolink-badge" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" focusable="false">
+                    <path d="M6.2 4.2 4.4 6a2.5 2.5 0 0 0 0 3.5 2.5 2.5 0 0 0 3.5 0l1.8-1.8"></path>
+                    <path d="M9.8 11.8 11.6 10a2.5 2.5 0 0 0 0-3.5 2.5 2.5 0 0 0-3.5 0L6.3 8.3"></path>
+                    <path d="M2 14 14 2"></path>
+                  </svg>
+                </span>
+                <span class="title-tooltip"
+                  >This project isn't public, but I'd love to talk about it
+                  privately.</span
+                ></span
+              >
+            </h3>
+            <p class="stack">HTML/CSS, JavaScript, PHP, SQL, Bootstrap</p>
+            <p class="project-copy">
+              Web-based system to manage graduation ceremony
+              slideshows, including a secure admin interface for uploading and organizing student 
+              information and photos, and a student portal for inputting their custom messages
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <h2>Education</h2>
+        <article class="card">
+          <div class="card-header">
+            <h3>Honours Bachelor of Computer Science - Cybersecurity Stream</h3>
+            <p>Carleton University | Ottawa, ON</p>
+            <p class="date">September 2024 - December 2028</p>
+          </div>
+          <div class="info-rows">
+            <p><span>GPA:</span> 11.93 CGPA (12.0 Major GPA)</p>
+            <p>
+              <span>Awards:</span> Entrance Scholarship ($12,000) and
+              Bachelor of Computer Science Entrance Award ($1,500)
+            </p>
+            <p>
+              <span>Relevant Coursework:</span> Object-Oriented Programming,
+              Abstract Data Structures and Algorithms, Systems Programming,
+              Software Engineering, Discrete Structures II, Databases, Calculus
+              II, Linear Algebra
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="section" id="skills">
+        <h2>Skills</h2>
+        <article class="card skills-card">
+          <div class="skills-group">
+            <h3>Languages</h3>
+            <div class="skills-chips" role="list" aria-label="Languages">
+              <span class="skill-chip" role="listitem">Python</span>
+              <span class="skill-chip" role="listitem">C</span>
+              <span class="skill-chip" role="listitem">C++</span>
+              <span class="skill-chip" role="listitem">Java</span>
+              <span class="skill-chip" role="listitem">JavaScript</span>
+              <span class="skill-chip" role="listitem">SQL (SQLite3)</span>
+              <span class="skill-chip" role="listitem">PHP</span>
+            </div>
+          </div>
+          <div class="skills-group">
+            <h3>Developer Tools</h3>
+            <div class="skills-chips" role="list" aria-label="Developer tools">
+              <span class="skill-chip" role="listitem">Git</span>
+              <span class="skill-chip" role="listitem">Docker</span>
+              <span class="skill-chip" role="listitem">REST APIs</span>
+              <span class="skill-chip" role="listitem">Linux</span>
+              <span class="skill-chip" role="listitem">Azure</span>
+              <span class="skill-chip" role="listitem">OpenCode</span>
+              <span class="skill-chip" role="listitem">VMware</span>
+              <span class="skill-chip" role="listitem">Node.js</span>
+              <span class="skill-chip" role="listitem">OpenStack</span>
+            </div>
+          </div>
+          <div class="skills-group">
+            <h3>Libraries and Frameworks</h3>
+            <div class="skills-chips" role="list" aria-label="Libraries and frameworks">
+              <span class="skill-chip" role="listitem">Flask</span>
+              <span class="skill-chip" role="listitem">Bootstrap</span>
+              <span class="skill-chip" role="listitem">JUnit</span>
+              <span class="skill-chip" role="listitem">Selenium</span>
+              <span class="skill-chip" role="listitem">LangChain</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section" id="experience">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <article class="card role-card">
+            <div class="card-header">
+              <h3>Cybersecurity Intern</h3>
+              <p>Fidus Systems | Kanata, ON</p>
+              <p class="date">May 2025 - August 2025</p>
+            </div>
+            <p class="role-summary">
+              Focused on practical cybersecurity improvements across awareness,
+              detection, and access governance
+            </p>
+            <div class="impact-grid">
+              <p>
+                <span>40%+</span> improvement in employee security performance
+                after seven phishing simulation and training campaigns
+              </p>
+              <p>
+                <span>60%</span> faster intrusion detection by deploying and
+                tuning an OpenCanary honeypot
+              </p>
+              <p>
+                <span>100+</span> weekly visitors onboarded through a digital
+                guest access workflow aligned with security policy
+              </p>
+            </div>
+          </article>
+
+          <article class="card role-card">
+            <div class="card-header">
+              <h3>Co-op Student</h3>
+              <p>Fidus Systems | Kanata, ON</p>
+              <p class="date">February 2023 - June 2023</p>
+            </div>
+            <p class="role-summary">
+              Supported critical infrastructure reliability and operations workflows for
+              internal IT teams
+            </p>
+            <div class="impact-grid">
+              <p>
+                <span>99.9%</span> server uptime supported through centralized
+                monitoring and instant downtime alerting
+              </p>
+              <p>
+                <span>90%+</span> reduction in laptop provisioning time using
+                WDS and MDT imaging pipelines
+              </p>
+              <p>
+                <span>Simplified server administration</span> by implementing
+                network-based server control for IT admins by deploying and
+                documenting an IP KVM system
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="find-me">
+        <h2>Get in Touch</h2>
+        <article class="card find-me-card">
+          <p class="find-me-copy">
+            If you want to contact me, feel free to message me on LinkedIn.
+          </p>
+          <div class="social-icons" aria-label="Where to find me links">
+            <a
+              class="icon-link"
+              href="https://linkedin.com/in/shaanchander"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                <path
+                  d="M0 1.15C0 .51.53 0 1.18 0h13.64C15.47 0 16 .51 16 1.15v13.7c0 .64-.53 1.15-1.18 1.15H1.18C.53 16 0 15.49 0 14.85V1.15Zm4.75 13.22V6.17H2.02v8.2h2.73ZM3.39 5.05c.95 0 1.54-.63 1.54-1.42-.02-.8-.6-1.42-1.53-1.42-.93 0-1.54.63-1.54 1.42 0 .79.59 1.42 1.51 1.42h.02Zm5.58 9.32v-4.58c0-.24.02-.47.09-.64.19-.47.62-.95 1.35-.95.95 0 1.34.72 1.34 1.78v4.39h2.73v-4.7c0-2.52-1.34-3.69-3.13-3.69-1.44 0-2.07.8-2.43 1.36h.02V6.17H6.21c.04.76 0 8.2 0 8.2h2.76Z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
