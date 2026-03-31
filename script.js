@@ -19,7 +19,6 @@
   function setToggleA11y(theme) {
     var nextTheme = theme === "dark" ? "light" : "dark";
     toggle.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
-    toggle.setAttribute("data-mode", theme);
     toggle.setAttribute("aria-label", "Switch to " + nextTheme + " mode");
     toggle.setAttribute("title", "Switch to " + nextTheme + " mode");
   }
