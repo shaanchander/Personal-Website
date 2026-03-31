@@ -7,7 +7,6 @@
   --muted: #475569;
   --muted-soft: #64748b;
   --accent: #0b5fff;
-  --accent-soft: rgba(11, 95, 255, 0.1);
   --border: #d7e2ef;
   --border-strong: #c7d6e6;
   --ui-tone: #355f79;
@@ -26,7 +25,6 @@ html[data-theme="dark"] {
   --muted: #c5cbd4;
   --muted-soft: #a4acb8;
   --accent: #d9dde4;
-  --accent-soft: rgba(217, 221, 228, 0.14);
   --border: #343941;
   --border-strong: #424852;
   --ui-tone: #e4ebf5;
@@ -283,15 +281,6 @@ html[data-theme="dark"] .nav-links a:hover {
   box-shadow: var(--shadow-md);
   padding: 2.2rem;
   margin: 0 auto;
-}
-
-.eyebrow {
-  margin: 0;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--ui-tone);
 }
 
 h1 {
