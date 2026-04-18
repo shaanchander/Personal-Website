@@ -134,29 +134,66 @@
           </article>
 
           <article class="card">
-            <h3>
-              <a
-                class="project-title-link"
-                href="https://github.com/shaanchander/NHL-Insider-Tracker"
-                target="_blank"
-                rel="noopener noreferrer"
-                >NHL Insider Tracker
-                <span class="link-badge" aria-hidden="true">
-                  <svg viewBox="0 0 16 16" focusable="false">
-                    <path
-                      d="M9.5 2h4v4h-1.5V4.56L6.53 10.03l-1.06-1.06L10.94 3.5H9.5V2ZM3 3.5A1.5 1.5 0 0 1 4.5 2h3v1.5h-3v9h9v-3H15v3A1.5 1.5 0 0 1 13.5 14h-9A1.5 1.5 0 0 1 3 12.5v-9Z"
-                    ></path>
-                  </svg>
-                </span></a
-              >
-            </h3>
+            <div class="project-heading">
+              <h3>NHL Insider Tracker</h3>
+            </div>
             <p class="stack">Python, REST APIs, Webhooks, YAML, Regex, Cron</p>
             <p class="project-copy">
-              Real-time automation tool that monitors NHL insider updates,
-              parses raw posts with regex-based rules, and sends structured
+              Real-time automation tool that monitors NHL insider updates and sends structured
               alerts through Discord webhooks for up-to-the-minute trade,
               injury, and league news
             </p>
+            <div class="project-links" aria-label="Project links">
+              <a
+                class="project-github-link"
+                href="https://github.com/shaanchander/NHL-Insider-Tracker"
+                aria-label="NHL Insider Tracker source code on GitHub"
+                title="GitHub repository"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8a8.01 8.01 0 0 0 5.47 7.59c.4.07.55-.17.55-.38v-1.34c-2.01.44-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52 0-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.58.82-2.13-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.48 7.48 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.55.82 1.26.82 2.13 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"
+                  ></path>
+                </svg>
+                <span class="project-link-label">GitHub</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="project-heading">
+              <h3>Handwritten Digit Classifier</h3>
+            </div>
+            <p class="stack">Python, PyTorch, Javascript, HTML/CSS</p>
+            <p class="project-copy">
+              Handwritten-digit classifier implemented in PyTorch (CNN and FCNN). Includes a web demo that loads the ONNX models and runs client-side digit recognition in the user's browser.
+            </p>
+            <div class="project-links" aria-label="Project links">
+              <a
+                class="project-github-link"
+                href="https://github.com/shaanchander/Handwritten-Digit-Classifier"
+                aria-label="Source code on GitHub"
+                title="GitHub repository"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8a8.01 8.01 0 0 0 5.47 7.59c.4.07.55-.17.55-.38v-1.34c-2.01.44-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52 0-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.58.82-2.13-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.48 7.48 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.55.82 1.26.82 2.13 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"
+                  ></path>
+                </svg>
+                <span class="project-link-label">GitHub</span>
+              </a>
+              <a
+                class="project-demo-link"
+                href="https://digits.shaanchander.ca"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Live Demo</a
+              >
+            </div>
           </article>
 
           <article class="card">
@@ -204,8 +241,8 @@
             </h3>
             <p class="stack">Python, Selenium, REST APIs</p>
             <p class="project-copy">
-              Python automation tool that registers users for selected City of
-              Ottawa recreation activities in one end-to-end flow by navigating
+              Python automation tool to automatically register users for selected City of
+              Ottawa recreation activities by navigating
               the registration site with Selenium, submitting user-provided
               parameters, retrieving the email 2FA code, and confirming
               enrollment
@@ -213,22 +250,9 @@
           </article>
 
           <article class="card">
-            <h3>
-              <a
-                class="project-title-link"
-                href="https://github.com/shaanchander/NHL-DB-Website"
-                target="_blank"
-                rel="noopener noreferrer"
-                >NHL DB Website
-                <span class="link-badge" aria-hidden="true">
-                  <svg viewBox="0 0 16 16" focusable="false">
-                    <path
-                      d="M9.5 2h4v4h-1.5V4.56L6.53 10.03l-1.06-1.06L10.94 3.5H9.5V2ZM3 3.5A1.5 1.5 0 0 1 4.5 2h3v1.5h-3v9h9v-3H15v3A1.5 1.5 0 0 1 13.5 14h-9A1.5 1.5 0 0 1 3 12.5v-9Z"
-                    ></path>
-                  </svg>
-                </span></a
-              >
-            </h3>
+            <div class="project-heading">
+              <h3>NHL DB Website</h3>
+            </div>
             <p class="stack">Flask, Python, HTML/CSS, REST APIs</p>
             <p class="project-copy">
               Flask-based web app that allows users to access data provided by the NHL API,
@@ -236,31 +260,23 @@
               team schedules, and standings in a simple, intuitive,
               and user-friendly way
             </p>
-          </article>
-
-          <article class="card">
-            <h3>
-              <span class="project-title-note" tabindex="0"
-                >Graduation Graphics System
-                <span class="nolink-badge" aria-hidden="true">
-                  <svg viewBox="0 0 16 16" focusable="false">
-                    <path d="M6.2 4.2 4.4 6a2.5 2.5 0 0 0 0 3.5 2.5 2.5 0 0 0 3.5 0l1.8-1.8"></path>
-                    <path d="M9.8 11.8 11.6 10a2.5 2.5 0 0 0 0-3.5 2.5 2.5 0 0 0-3.5 0L6.3 8.3"></path>
-                    <path d="M2 14 14 2"></path>
-                  </svg>
-                </span>
-                <span class="title-tooltip"
-                  >This project isn't public, but I'd love to talk about it
-                  privately.</span
-                ></span
+            <div class="project-links" aria-label="Project links">
+              <a
+                class="project-github-link"
+                href="https://github.com/shaanchander/NHL-DB-Website"
+                aria-label="NHL DB Website source code on GitHub"
+                title="GitHub repository"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-            </h3>
-            <p class="stack">HTML/CSS, JavaScript, PHP, SQL, Bootstrap</p>
-            <p class="project-copy">
-              Web-based system to manage graduation ceremony
-              slideshows, including a secure admin interface for uploading and organizing student 
-              information and photos, and a student portal for inputting their custom messages
-            </p>
+                <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8a8.01 8.01 0 0 0 5.47 7.59c.4.07.55-.17.55-.38v-1.34c-2.01.44-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52 0-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.58.82-2.13-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.48 7.48 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.55.82 1.26.82 2.13 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"
+                  ></path>
+                </svg>
+                <span class="project-link-label">GitHub</span>
+              </a>
+            </div>
           </article>
         </div>
       </section>
