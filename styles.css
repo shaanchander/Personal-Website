@@ -390,7 +390,6 @@ h2 {
 }
 
 .project-grid .card:hover {
-  transform: translateY(-2px);
   box-shadow: 0 16px 28px rgba(15, 23, 42, 0.1);
 }
 
@@ -457,7 +456,6 @@ html[data-theme="dark"] .project-grid .card:hover {
 }
 
 .project-github-link:hover {
-  transform: translateY(-1px);
   border-color: #aac4dd;
   background: #e3efff;
 }
@@ -494,7 +492,6 @@ html[data-theme="dark"] .project-grid .card:hover {
 }
 
 .project-demo-link:hover {
-  transform: translateY(-1px);
   border-color: #0b55cc;
   background: linear-gradient(180deg, #2b76ff 0%, #1666ff 100%);
 }
