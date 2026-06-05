@@ -560,6 +560,39 @@ html[data-theme="dark"] .nolink-badge {
   gap: 1rem;
 }
 
+.experience-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.experience-header .card-header {
+  min-width: 0;
+}
+
+.company-mark {
+  flex: 0 0 auto;
+  width: 9.2rem;
+  height: 3.45rem;
+  border: 1px solid color-mix(in srgb, var(--border-strong) 72%, #082777);
+  border-radius: var(--radius);
+  background: #082777;
+  overflow: hidden;
+}
+
+.company-logo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+html[data-theme="dark"] .company-mark {
+  border-color: color-mix(in srgb, var(--accent) 30%, #082777);
+}
+
 .role-summary {
   margin: 0.85rem 0 0;
   color: var(--muted);
@@ -670,6 +703,16 @@ html[data-theme="dark"] .nolink-badge {
     height: min(62vw, 260px);
     justify-self: start;
     order: -1;
+  }
+
+  .experience-header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .company-mark {
+    width: 8.4rem;
+    height: 3.15rem;
   }
 }
 
