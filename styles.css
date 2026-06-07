@@ -560,6 +560,7 @@ html[data-theme="dark"] .nolink-badge {
   gap: 1rem;
 }
 
+.education-header,
 .experience-header {
   display: flex;
   align-items: flex-start;
@@ -567,18 +568,40 @@ html[data-theme="dark"] .nolink-badge {
   gap: 1rem;
 }
 
+.education-header .card-header,
 .experience-header .card-header {
   min-width: 0;
 }
 
+.school-mark,
 .company-mark {
   flex: 0 0 auto;
   width: 9.2rem;
   height: 3.45rem;
-  border: 1px solid color-mix(in srgb, var(--border-strong) 72%, #082777);
   border-radius: var(--radius);
-  background: #082777;
   overflow: hidden;
+}
+
+.school-mark {
+  width: 12.4rem;
+  height: 4.7rem;
+  border: 1px solid var(--border-strong);
+  background: #ffffff;
+  padding: 0.28rem;
+}
+
+.company-mark {
+  border: 1px solid color-mix(in srgb, var(--border-strong) 72%, #082777);
+  background: #082777;
+}
+
+.school-logo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  transform: scale(1.65);
 }
 
 .company-logo {
@@ -587,6 +610,10 @@ html[data-theme="dark"] .nolink-badge {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+html[data-theme="dark"] .school-mark {
+  border-color: var(--border);
 }
 
 html[data-theme="dark"] .company-mark {
@@ -705,14 +732,21 @@ html[data-theme="dark"] .company-mark {
     order: -1;
   }
 
+  .education-header,
   .experience-header {
     align-items: stretch;
     flex-direction: column;
   }
 
+  .school-mark,
   .company-mark {
     width: 8.4rem;
     height: 3.15rem;
+  }
+
+  .school-mark {
+    width: 11rem;
+    height: 4.2rem;
   }
 }
 
