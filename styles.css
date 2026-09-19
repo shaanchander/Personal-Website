@@ -595,6 +595,16 @@ html[data-theme="dark"] .nolink-badge {
   background: #082777;
 }
 
+.company-mark-solace {
+  border-color: #7ddcc9;
+  background: linear-gradient(135deg, #f3fbf8, #dff7f1);
+}
+
+.company-mark-fidus {
+  border-color: #a9bee8;
+  background: linear-gradient(135deg, #f6f9ff, #e3edff);
+}
+
 .school-logo {
   display: block;
   width: 100%;
@@ -612,12 +622,46 @@ html[data-theme="dark"] .nolink-badge {
   object-position: center;
 }
 
+.company-logo-solace {
+  object-fit: contain;
+  padding: 0.35rem 0.45rem;
+}
+
 html[data-theme="dark"] .school-mark {
   border-color: var(--border);
 }
 
 html[data-theme="dark"] .company-mark {
   border-color: color-mix(in srgb, var(--accent) 30%, #082777);
+}
+
+html[data-theme="dark"] .company-mark-solace {
+  border-color: #287d70;
+  background: linear-gradient(135deg, #172d29, #10211e);
+}
+
+html[data-theme="dark"] .company-mark-fidus {
+  border-color: #2f5597;
+  background: linear-gradient(135deg, #0d2558 0%, #091a3c 52%, #070f20 100%);
+  padding: 0;
+}
+
+.company-logo-fidus-light,
+.company-logo-fidus-dark {
+  object-fit: contain;
+  padding: 0.55rem 0.65rem;
+}
+
+.company-logo-fidus-dark {
+  display: none;
+}
+
+html[data-theme="dark"] .company-logo-fidus-light {
+  display: none;
+}
+
+html[data-theme="dark"] .company-logo-fidus-dark {
+  display: block;
 }
 
 .role-summary {
